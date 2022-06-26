@@ -1,5 +1,5 @@
-import calendarIcon from '../../../assets/calendar.svg'
-import arrowIcon from '../../../assets/arrow.svg'
+import CalendarIcon from '../../../assets/CalendarIcon'
+import ArrowIcon from '../../../assets/ArrowIcon'
 import { useDatePicker } from '../../date-picker'
 import { getFormattedNumber } from '../../helpers'
 import {useEffect, useState} from 'react'
@@ -17,7 +17,7 @@ export function PickerTrigger({ children, onClick, open }: PickerTriggerProps) {
     return (
         <div className="rdp picker-trigger" onClick={onClick}>
             <div className="rdp picker-trigger-icon">
-                <img src={calendarIcon} alt="" />
+                <CalendarIcon />
             </div>
             <div className="rdp picker-trigger-main">
                 <p className="rdp picker-select-text">
@@ -32,7 +32,7 @@ export function PickerTrigger({ children, onClick, open }: PickerTriggerProps) {
                 </h2>
             </div>
             <div className={`rdp picker-trigger-arrow ${open ? 'open' : 'closed'}`}>
-                <img src={arrowIcon} alt="" />
+                <ArrowIcon />
             </div>
             {children}
         </div>
